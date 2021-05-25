@@ -1,0 +1,12 @@
+pcall(function()
+    while wait(1.5)do
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+local football = game.Workspace:WaitForChild("Football")
+local fbxplr = (plr.position-football.position).magnitude
+if (fbxplr <= 10) and
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed >= 16 then
+    plr.CFrame = CFrame.new(football.Position)
+    game:GetService("ReplicatedStorage").MainRemote:FireServer("RemoteControls","catch")
+end
+end
+ end)
