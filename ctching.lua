@@ -1,8 +1,6 @@
-local whitelisted = game.Players.LocalPlayer.Name
-local plr = game.Players.LocalPlayer
-if whitelisted == "rllydwhy" then
-    print("hi")
-    else 
+game.Players.LocalPlayer.Name == "rllydwhy"
+else
+game.Players.LocalPlayer:Kick()
         msg = Instance.new("Message",workspace) 
 msg.Text = "You Aren't Whitelisted Kicking in 5 seconds!" 
 wait(5)
