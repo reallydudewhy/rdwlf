@@ -1,11 +1,4 @@
-game.Players.LocalPlayer.Name == "rllydwhy"
-else
-game.Players.LocalPlayer:Kick()
-        msg = Instance.new("Message",workspace) 
-msg.Text = "You Aren't Whitelisted Kicking in 5 seconds!" 
-wait(5)
- game.Players.LocalPlayer:Kick("Please Whitelist!")
- end
+
 --[[
 AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
 ]]
