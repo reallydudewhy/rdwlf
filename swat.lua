@@ -1,5 +1,5 @@
 pcall(function()
-    while wait(0)do
+    while wait(1)do
     local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
 local football = game.Workspace:WaitForChild("Football")
 local fbxplr = (plr.position-football.position).magnitude
